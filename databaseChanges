@@ -1,0 +1,30 @@
+
+CREATE TABLE IF NOT EXISTS public.user_details
+(
+    id serial NOT NULL ,
+    user_name text,
+    mobile_no int
+);
+
+
+CREATE TABLE IF NOT EXISTS public.doctor_personal_detail
+(
+    id serial,
+    doctor_id text,
+    doctor_name text,
+    doctor_code text,
+    email_id text,
+    date_of_birth text,
+    phone_number text,
+    pan_number text,
+    form_status text,
+    scout_code text,
+    dob timestamp without time zone,
+    qr_code_url text,
+    doctor_status text,
+    verified boolean default false,
+    important boolean default false,
+    qr_installation_status boolean default false,
+	joining_date timestamp without time zone,
+    updated_on timestamp without time zone
+);
